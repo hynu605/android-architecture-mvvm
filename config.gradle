@@ -3,7 +3,7 @@ ext {
     android = [
             compileSdkVersion: 28,
             buildToolsVersion: "29.0.0",
-            applicationId    : "com.goldze.component",
+            applicationId    : "com.vsea.component",
             minSdkVersion    : 17,
             targetSdkVersion : 28,
             versionCode      : 1,
@@ -11,19 +11,24 @@ ext {
     ]
     //version配置
     versions = [
-            "junit-version"  : "4.12",
+            "junit-version"    : "4.12",
+            "appcompat"        : "1.0.2",
+            "constraintlayout" : "2.0.0-beta2",
+            "recyclerview"     : "1.1.0-beta03",
+            "material"         : "1.0.0"
     ]
     //support配置
     support = [
-            'animated-vector-drawable': "com.android.support:animated-vector-drawable:${versions["support-version"]}",
-            'junit'                   : "junit:junit:${versions["junit-version"]}",
+            "material"         : "com.google.android.material:${versions["material"]}",
+            "appcompat"        : "androidx.appcompat:appcompat:${versions["appcompat"]}",
+            "constraintlayout" : "androidx.constraintlayout:constraintlayout:${versions["constraintlayout"]}",
+            "recyclerview"     : "androidx.recyclerview:recyclerview:${versions["recyclerview"]}",
+            "junit"            : "junit:junit:${versions["junit-version"]}",
     ]
     //依赖第三方配置
     dependencies = [
-            //MVVMHabit
-            "MVVMHabit"                            : "com.github.goldze:MVVMHabit:3.1.0",
             //阿里路由框架
-            "arouter-api"                          : "com.alibaba:arouter-api:1.4.1",
+            "arouter-api"                          : "com.alibaba:arouter-api:1.5.0",
             "arouter-compiler"                     : "com.alibaba:arouter-compiler:1.2.2",
     ]
 }
